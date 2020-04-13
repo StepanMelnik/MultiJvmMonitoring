@@ -1,0 +1,13 @@
+{
+	"reportType" : "LOG4J",
+	"refreshInterval" : 10000,
+	"thresholdCpuToProfile" : 0.4,
+	"processNames" : 
+		[
+			"java.exe", "javaw.exe", "Tomcat.exe", "eclipse.exe", "test.exe"
+		],
+	"ignorePackages" : 
+		[
+			"java.", "com.sun.", "javax.", "org.eclipse", "org.apache.", "org.junit.", "org.mockito.", "com.sme.monitoring.jvm"
+		]
+}

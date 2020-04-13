@@ -1,0 +1,10 @@
+/.classpath
+/.project
+/Log4jReporter.log
+/.idea/
+/.settings/
+/.checkstyle
+/target/
+/bin/
+/build/
+ 

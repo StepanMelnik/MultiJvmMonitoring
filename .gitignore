@@ -1,0 +1,10 @@
+/.classpath
+/.project
+/pdfanalyzer.log
+/.idea/
+/.settings/
+/.checkstyle
+/target/
+/bin/
+/build/
+ 
