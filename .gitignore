@@ -4,6 +4,8 @@
 /.idea/
 /.settings/
 /.checkstyle
+/.gradle
+/gradle
 /target/
 /bin/
 /build/

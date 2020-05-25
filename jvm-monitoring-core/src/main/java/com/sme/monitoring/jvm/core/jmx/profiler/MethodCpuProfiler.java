@@ -35,6 +35,7 @@ public class MethodCpuProfiler
      * Profiles current threads.
      * 
      * @param mbeanServerConnection MBeanServerConnection connection;
+     * @return Returns a list of profiled methods;
      * @throws IOException The exception if the management interface cannot be created.
      */
     public List<MethodProperty> profile(MBeanServerConnection mbeanServerConnection) throws IOException

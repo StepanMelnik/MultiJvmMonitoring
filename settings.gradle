@@ -1,0 +1,4 @@
+rootProject.name = 'jvm-monitoring'
+
+include(':jvm-monitoring-core')
+include(':jvm-monitoring-report')

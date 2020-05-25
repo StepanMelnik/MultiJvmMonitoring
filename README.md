@@ -17,7 +17,11 @@ We can use Log4jRepoter that analyzes all threads in java process and profiles w
 
 ### Build
 
+Maven
 > mvn clean install
+
+Gradle
+> gradle --console verbose --rerun-tasks build
 
 ### Config
 Create **config.json** file:

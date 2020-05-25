@@ -1,0 +1,23 @@
+dependencies {
+    implementation 'org.jprocesses:jProcesses:1.6.5'
+    testImplementation 'org.mockito:mockito-all:1.10.19'
+    testImplementation 'org.powermock:powermock-api-mockito:1.7.4'
+    testImplementation 'org.powermock:powermock-core:1.7.4'
+    testImplementation 'org.powermock:powermock-module-junit4:1.7.4'
+    testImplementation 'com.openpojo:openpojo:0.8.3'
+    compile files("${System.getProperty('java.home')}/../lib/tools.jar")
+    //system 'com.sun:tools:1.8'
+}
+
+description = 'SME :: JvmMonitoring :: Core'
+
+task testsJar(type: Jar) {
+    archiveClassifier = 'tests'
+    from(sourceSets.test.output)
+}
+
+publishing.publications.maven.artifact(testsJar)
+
+java {
+    withJavadocJar()
+}

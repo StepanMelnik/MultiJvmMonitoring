@@ -1,0 +1,18 @@
+description = 'SME :: JvmMonitoring :: Report'
+
+dependencies {
+    implementation project(':jvm-monitoring-core')
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.10.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.10.3'
+}
+
+task testsJar(type: Jar) {
+    archiveClassifier = 'tests'
+    from(sourceSets.test.output)
+}
+
+publishing.publications.maven.artifact(testsJar)
+
+java {
+    withJavadocJar()
+}
